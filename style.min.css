@@ -1,0 +1,223 @@
+@font-face {
+  font-family: Aeonik-Light;
+  src: url(fonts/Aeonik-Light.otf);
+}
+
+@font-face {
+  font-family: Canela-Regular;
+  src: url(fonts/Canela-Regular.ttf);
+}
+
+@font-face {
+  font-family: Italiano;
+  src: url(fonts/Italianno-Regular.ttf);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #dbd4cc;
+}
+
+h1,
+.letter-white {
+  font-family: Canela-Regular, serif;
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 100;
+}
+
+p,
+a,
+span,
+div {
+  font-family: Aeonik-Light, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.main-container {
+  margin: 0 15px;
+}
+
+header .header-flex-container {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+header .header-flex-container .header-text-container div .studio-desc-desktop {
+  display: none;
+}
+
+header .header-flex-container .email-container {
+  display: none;
+}
+
+header .header-flex-container .email-container div {
+  display: none;
+  margin-left: auto;
+}
+
+header .studio-desc-mobile {
+  width: 280px;
+  margin-top: 15px;
+}
+
+main {
+  margin-top: 15px;
+}
+
+main .title {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .logo-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 18px;
+}
+
+main .logo-container img {
+  width: 100%;
+}
+
+main .text-full-container {
+  margin-top: 26px;
+}
+
+main .text-full-container .text-full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .branding {
+  margin-top: 37px;
+  text-align: center;
+}
+
+footer .ask-link {
+  margin-top: 30px;
+  margin-bottom: 86px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  h1,
+  .letter-white {
+    font-size: 5rem;
+  }
+  p,
+  a,
+  span {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .main-container {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  header {
+    padding: 10px 20px 0 10px;
+  }
+  header .header-flex-container {
+    margin-top: 0;
+  }
+  header .header-flex-container .header-text-container {
+    position: relative;
+  }
+  header .header-flex-container .header-text-container div .p-trigger:hover ~ .studio-desc-desktop {
+    display: block;
+    position: absolute;
+    width: 290px;
+    margin-top: 10px;
+  }
+  header .header-flex-container .email-container {
+    display: none;
+  }
+  header .header-flex-container .email-container div {
+    display: none;
+    margin-left: auto;
+  }
+  header .studio-desc-mobile {
+    display: none;
+  }
+  main {
+    margin-top: 100px;
+  }
+  main .logo-container {
+    max-width: 440px;
+    margin-top: 18px;
+  }
+  main .logo-container img {
+    width: 100%;
+  }
+  main .title {
+    position: absolute;
+    left: -60%;
+    top: 30%;
+    width: 950px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .title .letter-white {
+    color: white;
+  }
+  main .text-full-container {
+    margin-top: 20px;
+  }
+  main .text-full-container .text-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .branding {
+    margin-top: 22px;
+  }
+  footer .ask-link {
+    margin-top: 48px;
+  }
+}
+/*# sourceMappingURL=style.min.css.map */
