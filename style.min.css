@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: Canela-Regular;
-  src: url(fonts/Canela-Regular.ttf);
+  font-family: Canela-Thin;
+  src: url(fonts/Canela-Thin.ttf);
 }
 
 @font-face {
@@ -30,7 +30,7 @@ body {
 
 h1,
 .letter-white {
-  font-family: Canela-Regular, serif;
+  font-family: Canela-Thin, serif;
   font-size: 2rem;
   line-height: 100%;
   font-weight: 100;
@@ -83,6 +83,11 @@ header .header-flex-container .email-container div {
 header .studio-desc-mobile {
   width: 280px;
   margin-top: 15px;
+  display: none;
+}
+
+header .studio-desc-mobile:hover {
+  display: block;
 }
 
 main {
