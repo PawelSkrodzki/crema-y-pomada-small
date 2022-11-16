@@ -41,7 +41,7 @@ a,
 span,
 div {
   font-family: Aeonik-Light, sans-serif;
-  font-size: 10px;
+  font-size: 9px;
   letter-spacing: 1.5px;
   line-height: 160%;
   text-transform: uppercase;
@@ -71,6 +71,10 @@ header .header-flex-container .header-text-container div .studio-desc-desktop {
   display: none;
 }
 
+header .header-flex-container .header-text-container div .p-trigger:hover .studio-desc-mobile {
+  background-color: red;
+}
+
 header .header-flex-container .email-container {
   display: none;
 }
@@ -84,10 +88,6 @@ header .studio-desc-mobile {
   width: 280px;
   margin-top: 15px;
   display: none;
-}
-
-header .studio-desc-mobile:hover {
-  display: block;
 }
 
 main {
@@ -144,12 +144,11 @@ footer .ask-link {
 @media (min-width: 992px) {
   h1,
   .letter-white {
-    font-size: 5rem;
+    font-size: 128px;
   }
   p,
   a,
   span {
-    font-size: 11px;
     line-height: 17px;
   }
   .main-container {
@@ -183,7 +182,7 @@ footer .ask-link {
     display: none;
   }
   main {
-    margin-top: 100px;
+    margin-top: 70px;
   }
   main .logo-container {
     max-width: 440px;
@@ -194,9 +193,11 @@ footer .ask-link {
   }
   main .title {
     position: absolute;
-    left: -60%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    left: 50%;
     top: 30%;
-    width: 950px;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

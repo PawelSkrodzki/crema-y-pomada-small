@@ -40,7 +40,7 @@ a,
 span,
 div {
     font-family: Aeonik-Light, sans-serif;
-    font-size: 10px;
+    font-size: 9px;
     letter-spacing: 1.5px;
     line-height: 160%;
     text-transform: uppercase;
@@ -68,6 +68,11 @@ header {
                 .studio-desc-desktop {
                     display: none;
                 }
+
+                .p-trigger:hover .studio-desc-mobile {
+                    // display: block;
+                    background-color: red;
+                }
             }
         }
 
@@ -84,10 +89,6 @@ header {
         width: 280px;
         margin-top: 15px;
         display: none;
-
-        &:hover {
-            display: block;
-        }
     }
 }
 
@@ -137,13 +138,12 @@ footer {
 @media (min-width: 992px) {
     h1,
     .letter-white {
-        font-size: 5rem;
+        font-size: 128px;
     }
 
     p,
     a,
     span {
-        font-size: 11px;
         line-height: 17px;
     }
 
@@ -186,7 +186,7 @@ footer {
     }
 
     main {
-        margin-top: 100px;
+        margin-top: 70px;
 
         .logo-container {
             max-width: 440px;
@@ -198,9 +198,10 @@ footer {
 
         .title {
             position: absolute;
-            left: -60%;
+            transform: translateX(-50%);
+            left: 50%;
             top: 30%;
-            width: 950px;
+            width: 1200px;
             display: flex;
             justify-content: space-between;
 
