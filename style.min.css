@@ -1,6 +1,6 @@
 @font-face {
   font-family: Aeonik-Light;
-  src: url(fonts/Aeonik-Light.otf);
+  src: url(fonts/Aeonik-Medium.otf);
 }
 
 @font-face {
@@ -34,6 +34,7 @@ h1,
   font-size: 2rem;
   line-height: 100%;
   font-weight: 100;
+  text-transform: none;
 }
 
 p,
@@ -102,6 +103,32 @@ main .title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+main .title .title-colored {
+  display: block;
+  font-family: Canela-Thin, serif;
+  font-size: 128px;
+  line-height: 100%;
+  font-weight: 100;
+  width: 1200px;
+}
+
+main .title .title-colored:after {
+  mix-blend-mode: difference;
+  color: white;
+}
+
+main .title .crema-colored:after {
+  content: 'CREMA';
+}
+
+main .title .y-colored:after {
+  content: 'y';
+}
+
+main .title .pomada-colored:after {
+  content: 'POMADA';
 }
 
 main .logo-container {
@@ -188,8 +215,12 @@ footer .ask-link {
     max-width: 440px;
     margin-top: 18px;
   }
-  main .logo-container img {
+  main .logo-container .slider {
+    position: relative;
     width: 100%;
+    height: 489px;
+    background-image: url("img/slider1.png");
+    background-size: contain;
   }
   main .title {
     position: absolute;
@@ -197,16 +228,14 @@ footer .ask-link {
             transform: translateX(-50%);
     left: 50%;
     top: 30%;
-    width: 1200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  main .title .letter-white {
-    color: white;
+    z-index: 10;
+    width: 1190px;
+    font-size: 128px;
+    word-spacing: 50px;
+    mix-blend-mode: difference;
+    color: black;
+    -webkit-filter: invert(80%);
+            filter: invert(80%);
   }
   main .text-full-container {
     margin-top: 20px;

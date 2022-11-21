@@ -1,6 +1,6 @@
 @font-face {
     font-family: Aeonik-Light;
-    src: url(fonts/Aeonik-Light.otf);
+    src: url(fonts/Aeonik-Medium.otf);
 }
 
 @font-face {
@@ -33,6 +33,7 @@ h1,
     font-size: 2rem;
     line-height: 100%;
     font-weight: 100;
+    text-transform: none;
 }
 
 p,
@@ -99,6 +100,30 @@ main {
         margin: 10px 0;
         display: flex;
         justify-content: space-between;
+
+        .title-colored {
+            display: block;
+            font-family: Canela-Thin, serif;
+            font-size: 128px;
+            line-height: 100%;
+            font-weight: 100;
+            width: 1200px;
+        }
+
+        .title-colored:after {
+            mix-blend-mode: difference;
+            color: white;
+        }
+
+        .crema-colored:after {
+            content: 'CREMA';
+        }
+        .y-colored:after {
+            content: 'y';
+        }
+        .pomada-colored:after {
+            content: 'POMADA';
+        }
     }
 
     .logo-container {
@@ -191,8 +216,13 @@ footer {
         .logo-container {
             max-width: 440px;
             margin-top: 18px;
-            img {
+
+            .slider {
+                position: relative;
                 width: 100%;
+                height: 489px;
+                background-image: url('img/slider1.png');
+                background-size: contain;
             }
         }
 
@@ -201,13 +231,13 @@ footer {
             transform: translateX(-50%);
             left: 50%;
             top: 30%;
-            width: 1200px;
-            display: flex;
-            justify-content: space-between;
-
-            .letter-white {
-                color: white;
-            }
+            z-index: 10;
+            width: 1190px;
+            font-size: 128px;
+            word-spacing: 50px;
+            mix-blend-mode: difference;
+            color: black;
+            filter: invert(80%);
         }
 
         .text-full-container {
