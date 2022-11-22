@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Aeonik-Light;
+  font-family: Aeonik-Medium;
   src: url(fonts/Aeonik-Medium.otf);
 }
 
@@ -41,7 +41,7 @@ p,
 a,
 span,
 div {
-  font-family: Aeonik-Light, sans-serif;
+  font-family: Aeonik-Medium, sans-serif;
   font-size: 9px;
   letter-spacing: 1.5px;
   line-height: 160%;
@@ -105,41 +105,16 @@ main .title {
           justify-content: space-between;
 }
 
-main .title .title-colored {
-  display: block;
-  font-family: Canela-Thin, serif;
-  font-size: 128px;
-  line-height: 100%;
-  font-weight: 100;
-  width: 1200px;
-}
-
-main .title .title-colored:after {
-  mix-blend-mode: difference;
-  color: white;
-}
-
-main .title .crema-colored:after {
-  content: 'CREMA';
-}
-
-main .title .y-colored:after {
-  content: 'y';
-}
-
-main .title .pomada-colored:after {
-  content: 'POMADA';
-}
-
 main .logo-container {
-  position: relative;
   margin: 0 auto;
   max-width: 500px;
   margin-top: 18px;
 }
 
-main .logo-container img {
-  width: 100%;
+main .logo-container .slider {
+  background-image: url("img/slider1.png");
+  background-position: center top;
+  background-size: 100% auto;
 }
 
 main .text-full-container {
