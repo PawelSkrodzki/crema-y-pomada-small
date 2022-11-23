@@ -11,13 +11,10 @@ setInterval(showTime, 1000);
 
 document.addEventListener('DOMContentLoaded', () => {
   const slider = document.querySelector('.slider');
-  slider.style.backgroundImage = 'sdas';
-  const style = getComputedStyle(slider);
-  console.log('elem', style.backgroundImage);
 
   let i = 0;
   setInterval(() => {
-    slider.style.backgroundImage = `url(img/slider${i}.png)`;
+    slider.src = `img/slider${i}.png`;
     i += 1;
     if (i === 3) {
       i = 0;
