@@ -27,11 +27,11 @@ body {
     background-color: #dbd4cc;
 }
 
-h1,
-.letter-white {
+h1 {
     font-family: Canela-Thin, serif;
-    font-size: 2rem;
+    font-size: 10%;
     line-height: 100%;
+    white-space: nowrap;
     font-weight: 100;
     text-transform: none;
 }
@@ -58,20 +58,21 @@ a {
 
 header {
     .header-flex-container {
-        margin-top: 50px;
+        margin-top: 15px;
         display: flex;
         justify-content: space-between;
         width: 100%;
 
         .header-text-container {
-            div {
-                .studio-desc-desktop {
-                    display: none;
-                }
+            .studio-desc-desktop {
+                display: none;
+            }
 
-                .p-trigger:hover .studio-desc-mobile {
-                    // display: block;
-                    background-color: red;
+            div {
+                .p-trigger:hover ~ .studio-desc-desktop {
+                    display: block;
+                    width: 290px;
+                    margin-top: 10px;
                 }
             }
         }
@@ -149,6 +150,8 @@ footer {
     }
 
     header {
+        height: 10vh;
+        min-height: 100px;
         padding: 10px 20px 0 10px;
 
         .header-flex-container {
@@ -180,10 +183,19 @@ footer {
         }
     }
 
+    .flex-contnet-container{
+        height: 90vh;
+        min-height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     main {
         margin-top: 70px;
 
         .logo-container {
+            position: relative;
             max-width: 440px;
             margin-top: 18px;
 

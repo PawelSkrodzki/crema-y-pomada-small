@@ -28,11 +28,11 @@ body {
   background-color: #dbd4cc;
 }
 
-h1,
-.letter-white {
+h1 {
   font-family: Canela-Thin, serif;
-  font-size: 2rem;
+  font-size: 10%;
   line-height: 100%;
+  white-space: nowrap;
   font-weight: 100;
   text-transform: none;
 }
@@ -58,7 +58,7 @@ a {
 }
 
 header .header-flex-container {
-  margin-top: 50px;
+  margin-top: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,12 +68,14 @@ header .header-flex-container {
   width: 100%;
 }
 
-header .header-flex-container .header-text-container div .studio-desc-desktop {
+header .header-flex-container .header-text-container .studio-desc-desktop {
   display: none;
 }
 
-header .header-flex-container .header-text-container div .p-trigger:hover .studio-desc-mobile {
-  background-color: red;
+header .header-flex-container .header-text-container div .p-trigger:hover ~ .studio-desc-desktop {
+  display: block;
+  width: 290px;
+  margin-top: 10px;
 }
 
 header .header-flex-container .email-container {
@@ -148,6 +150,8 @@ footer .ask-link {
     height: 100vh;
   }
   header {
+    height: 10vh;
+    min-height: 100px;
     padding: 10px 20px 0 10px;
   }
   header .header-flex-container {
@@ -172,10 +176,24 @@ footer .ask-link {
   header .studio-desc-mobile {
     display: none;
   }
+  .flex-contnet-container {
+    height: 90vh;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   main {
     margin-top: 70px;
   }
   main .logo-container {
+    position: relative;
     max-width: 440px;
     margin-top: 18px;
   }
