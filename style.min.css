@@ -68,13 +68,17 @@ header .header-flex-container {
   width: 100%;
 }
 
-header .header-flex-container .header-text-container .studio-desc-desktop {
+header .header-flex-container .header-text-container .studio-description {
   display: none;
+  width: 60px;
 }
 
-header .header-flex-container .header-text-container div .p-trigger:hover ~ .studio-desc-desktop {
-  display: block;
+header .header-flex-container .header-text-container .studio-description p {
   width: 290px;
+}
+
+header .header-flex-container .header-text-container div .p-trigger:hover ~ .studio-description {
+  display: block;
   margin-top: 10px;
 }
 
@@ -85,12 +89,6 @@ header .header-flex-container .email-container {
 header .header-flex-container .email-container div {
   display: none;
   margin-left: auto;
-}
-
-header .studio-desc-mobile {
-  width: 280px;
-  margin-top: 15px;
-  display: none;
 }
 
 main {
@@ -147,7 +145,6 @@ footer .ask-link {
   .main-container {
     margin: 0;
     width: 100vw;
-    height: 100vh;
   }
   header {
     height: 10vh;
@@ -160,24 +157,23 @@ footer .ask-link {
   header .header-flex-container .header-text-container {
     position: relative;
   }
-  header .header-flex-container .header-text-container div .p-trigger:hover ~ .studio-desc-desktop {
+  header .header-flex-container .header-text-container div .p-trigger:hover ~ .studio-description {
     display: block;
     position: absolute;
     width: 290px;
     margin-top: 10px;
   }
   header .header-flex-container .email-container {
-    display: none;
+    display: block;
   }
   header .header-flex-container .email-container div {
-    display: none;
-    margin-left: auto;
+    display: block;
   }
   header .studio-desc-mobile {
     display: none;
   }
   .flex-contnet-container {
-    height: 90vh;
+    height: 89vh;
     min-height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;

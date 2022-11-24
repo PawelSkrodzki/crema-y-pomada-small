@@ -64,14 +64,18 @@ header {
         width: 100%;
 
         .header-text-container {
-            .studio-desc-desktop {
+            .studio-description {
                 display: none;
+                width: 60px;
+
+                p {
+                    width: 290px;
+                }
             }
 
             div {
-                .p-trigger:hover ~ .studio-desc-desktop {
+                .p-trigger:hover ~ .studio-description {
                     display: block;
-                    width: 290px;
                     margin-top: 10px;
                 }
             }
@@ -84,12 +88,6 @@ header {
                 margin-left: auto;
             }
         }
-    }
-
-    .studio-desc-mobile {
-        width: 280px;
-        margin-top: 15px;
-        display: none;
     }
 }
 
@@ -105,9 +103,9 @@ main {
         margin: 0 auto;
         max-width: 500px;
         margin-top: 18px;
-        
+
         .slider {
-                width: 100%;
+            width: 100%;
         }
     }
 
@@ -136,7 +134,6 @@ footer {
 }
 
 @media (min-width: 992px) {
-
     p,
     a,
     span {
@@ -146,7 +143,7 @@ footer {
     .main-container {
         margin: 0;
         width: 100vw;
-        height: 100vh;
+        // height: 100vh;
     }
 
     header {
@@ -160,7 +157,7 @@ footer {
             .header-text-container {
                 position: relative;
                 div {
-                    .p-trigger:hover ~ .studio-desc-desktop {
+                    .p-trigger:hover ~ .studio-description {
                         display: block;
                         position: absolute;
                         width: 290px;
@@ -170,10 +167,9 @@ footer {
             }
 
             .email-container {
-                display: none;
+                display: block;
                 div {
-                    display: none;
-                    margin-left: auto;
+                    display: block;
                 }
             }
         }
@@ -183,8 +179,8 @@ footer {
         }
     }
 
-    .flex-contnet-container{
-        height: 90vh;
+    .flex-contnet-container {
+        height: 89vh;
         min-height: 600px;
         display: flex;
         justify-content: center;
@@ -243,10 +239,10 @@ footer {
 }
 
 @media (min-width: 1200px) {
-    main{
-        .title{
+    main {
+        .title {
             width: 1200px;
             font-size: 128px;
         }
-}
+    }
 }
