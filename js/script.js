@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(() => {
     slider.src = `img/slider${i}.png`;
     i += 1;
-    if (i === 3) {
+    if (i === 4) {
       i = 0;
     }
   }, 2000);

@@ -124,9 +124,13 @@ main {
 }
 
 footer {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 86px;
+
     .ask-link {
-        margin-top: 30px;
-        margin-bottom: 86px;
         text-align: center;
         text-decoration: underline;
         cursor: pointer;
@@ -199,7 +203,7 @@ footer {
                 position: relative;
                 width: 100%;
                 height: 489px;
-                background-image: url('img/slider1.png');
+                background-image: url("img/slider1.png");
                 background-size: contain;
             }
         }
@@ -232,9 +236,7 @@ footer {
     }
 
     footer {
-        .ask-link {
-            margin-top: 48px;
-        }
+        margin-top: 48px;
     }
 }
 
