@@ -19,5 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (i === 4) {
       i = 0;
     }
-  }, 2000);
+  }, 3000);
 });
