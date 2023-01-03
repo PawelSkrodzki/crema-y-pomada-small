@@ -94,15 +94,20 @@ header {
 main {
     margin-top: 15px;
 
-    .title {
-        margin: 10px 0;
-        text-align: center;
-    }
-
     .logo-container {
         margin: 0 auto;
         max-width: 500px;
         margin-top: 18px;
+
+        .mobile-logo {
+            width: 100%;
+        }
+
+        .desktop-logo {
+            margin: 10px 0;
+            text-align: center;
+            display: none;
+        }
 
         .slider {
             width: 100%;
@@ -127,8 +132,7 @@ footer {
     max-width: 500px;
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 86px;
+    margin: 30px auto 86px auto;
 
     .ask-link {
         text-align: center;
@@ -147,7 +151,6 @@ footer {
     .main-container {
         margin: 0;
         width: 100vw;
-        // height: 100vh;
     }
 
     header {
@@ -199,27 +202,32 @@ footer {
             max-width: 440px;
             margin-top: 18px;
 
+            .mobile-logo {
+                display: none;
+            }
+
+            .desktop-logo {
+                display: block;
+                position: absolute;
+                transform: translateX(-50%);
+                left: 50%;
+                top: 30%;
+                z-index: 10;
+                width: 1000px;
+                font-size: 102px;
+                word-spacing: 50px;
+                mix-blend-mode: difference;
+                color: black;
+                filter: invert(80%);
+            }
+
             .slider {
                 position: relative;
                 width: 100%;
                 height: 489px;
-                background-image: url("img/slider1.png");
+                background-image: url('img/slider1.png');
                 background-size: contain;
             }
-        }
-
-        .title {
-            position: absolute;
-            transform: translateX(-50%);
-            left: 50%;
-            top: 30%;
-            z-index: 10;
-            width: 1000px;
-            font-size: 102px;
-            word-spacing: 50px;
-            mix-blend-mode: difference;
-            color: black;
-            filter: invert(80%);
         }
 
         .text-full-container {
@@ -242,9 +250,11 @@ footer {
 
 @media (min-width: 1200px) {
     main {
-        .title {
-            width: 1200px;
-            font-size: 128px;
+        .logo-container {
+            .desktop-logo {
+                width: 1200px;
+                font-size: 128px;
+            }
         }
     }
 }
