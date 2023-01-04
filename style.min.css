@@ -107,6 +107,9 @@ main .branding {
   margin-top: 37px;
   text-align: center;
 }
+main .branding .unbreakable {
+  white-space: nowrap;
+}
 
 footer {
   max-width: 500px;
@@ -214,6 +217,27 @@ span {
   footer {
     margin-top: 48px;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+  }
+  footer .footer-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer-box:first-child {
+    justify-content: flex-start;
+  }
+  footer .footer-box:last-child {
+    justify-content: flex-end;
+  }
+  footer .footer-box:first-child > span {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  footer .footer-box:last-child > span {
+    margin-left: auto;
   }
 }
 @media (min-width: 1200px) {

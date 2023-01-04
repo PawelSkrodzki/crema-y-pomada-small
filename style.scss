@@ -124,6 +124,10 @@ main {
     .branding {
         margin-top: 37px;
         text-align: center;
+
+        .unbreakable{
+            white-space: nowrap;
+        }
     }
 }
 
@@ -150,7 +154,7 @@ footer {
         line-height: 17px;
     }
 
-    body{
+    body {
         overflow: hidden;
     }
 
@@ -252,6 +256,32 @@ footer {
     footer {
         margin-top: 48px;
         flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: auto;
+
+        .footer-box {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-box:first-child{
+            justify-content: flex-start;
+        }
+
+        .footer-box:last-child{
+            justify-content: flex-end;
+        }
+
+        .footer-box:first-child > span {
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        .footer-box:last-child > span {
+            margin-left: auto;
+        }
     }
 }
 
