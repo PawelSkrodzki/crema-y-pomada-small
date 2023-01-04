@@ -54,7 +54,7 @@ a {
 }
 
 header .header-flex-container {
-  margin-top: 15px;
+  margin-top: 12px;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -79,12 +79,11 @@ header .header-flex-container .email-container div {
 }
 
 main {
-  margin-top: 15px;
+  margin-top: 50px;
 }
 main .logo-container {
   margin: 0 auto;
   max-width: 500px;
-  margin-top: 18px;
 }
 main .logo-container .mobile-logo {
   width: 100%;
@@ -112,7 +111,10 @@ main .branding {
 footer {
   max-width: 500px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  height: 60px;
   margin: 30px auto 86px auto;
 }
 footer .ask-link {
@@ -126,6 +128,9 @@ footer .ask-link {
 a,
 span {
     line-height: 17px;
+  }
+  body {
+    overflow: hidden;
   }
   .main-container {
     margin: 0;
@@ -208,6 +213,7 @@ span {
   }
   footer {
     margin-top: 48px;
+    flex-direction: row;
   }
 }
 @media (min-width: 1200px) {
